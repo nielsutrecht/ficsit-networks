@@ -1,0 +1,5 @@
+local card = computer.getPCIDevices(findClass("FINInternetCard"))[1]
+
+local req = card:request("https://httpbin.org/anything", "POST", "hey ho!!!", "Content-Type", "text")
+
+print(req:await())
