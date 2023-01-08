@@ -32,4 +32,6 @@ save("examples/require.lua", "program.lua")
 save("examples/testlib.lua", "testlib.lua")
 
 -- load the library from the file system and use it
+filesystem.loadFile("testlib.lua")
+
 filesystem.doFile("program.lua")
