@@ -145,11 +145,11 @@ function updatePanel(i, b, state)
     gaugeFuel.percent = state["fuel"] / 50.0
 
     if b.standby then
-        button:setColor(1, 0, 0, 0)
+        button:setColor(1, 0, 0, 0.1)
     elseif b.productivity < 0.95 then
-        button:setColor(1, 0.5, 0, 0)
+        button:setColor(1, 0.5, 0, 0.1)
     else
-        button:setColor(0, 1, 0, 0)
+        button:setColor(0, 1, 0, 0.1)
     end
 end
 
